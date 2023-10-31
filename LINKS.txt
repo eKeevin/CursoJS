@@ -1,0 +1,6 @@
+https://stackoverflow.com/ 
+momentJS
+Sweet Alert
+Axios
+son librerias de JS 
+quokka extension para vscode 
