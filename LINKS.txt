@@ -4,3 +4,7 @@ Sweet Alert
 Axios
 son librerias de JS 
 quokka extension para vscode 
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort Documentacion metodo sort
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce Documentacion metodo reduce
