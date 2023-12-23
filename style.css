@@ -1,54 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button{
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+}
+
 body{
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+
+header{
+box-shadow: 0 0 1rem rgba(0, 0, 0, 0.295);
+max-width: 100%;
+
+
+}
+
+.nav{
+    padding-bottom: 1rem;
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(177, 33, 33);
+    margin: 0 auto;
+}
+
+.nav img {
+    border-radius: 1rem;
+    display: flex;
+    padding-bottom: 1rem;
+}
+.list-nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.boton-header{
+    background-color: azure;
+    padding: 0.5rem;
+    border-radius: 100vmax;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.295)
     
-background-image:url(./img/NEUMORPHIC_CIRCLES_BACKGROUND.jpg);
 }
 
-h1{
-    font-size: 3em;
+.boton-header:hover{
+   transform:scale(1.3);
+   transition: 50ms;
+   
+}
+
+
+main{
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto
+}
+
+.todos-poke{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+}
+
+.pokemon{
+    text-transform: uppercase;
+    background-color: beige;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+    padding-top: 1rem;
+    padding-bottom: 1.5rem; 
+}
+.pokemon-imagen{
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+
+
+}
+.pokemon-imagen img{
+    width: 100%;
+    max-width: 8rem;
+
+}
+
+.pokemon-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin: 20px;
-    background-color: black;
-}
-.parrafo1{
-    font-size:2em;
-    margin: 20px;
+    gap: 1rem;
+    padding-inline: 1rem;
 }
 
-
-.botoncitosBuscador{
-    border-radius: 3px;
-    font-size: 1.5em;
-    border: none;
-  color: rgb(51, 70, 50);
-  padding: 6px;
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-
-
+.nombre-contenedor{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.botoncitosBuscador:hover{
-    background-color:rgb(140, 123, 239)
-
-
+.pokemon-id{
+    background-color: rgb(182, 194, 150);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-block: 5px;
+    border-radius: 100vmax;
 }
 
-.formularioNuevoProducto{
-font-size: 2em;
-
+.pokemon-tipos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+.pokemon-tipos p {
+    padding: 5px;
+    border-radius: 1rem;
 }
 
 
-.estiloContenedor{
-    width: 50%;
-    height: 50%;
-background-color: rgb(98, 102, 102);
+.normal{
+background-color:beige ;
+color: black;
+}
+
+.fire{
+    background-color:rgb(235, 85, 65) ;
+    color: black;
+    }
+
+.water{
+background-color:rgb(72, 160, 175) ;
+color: black;
+}
+
+.grass{
+    background-color:rgb(63, 151, 60) ;
+    color: black;
+    }
+
+.electric{
+background-color:rgb(247, 247, 10) ;
+color: black;
 }
 
 
+.ice{
+background-color:rgb(159, 182, 190) ;
+color: black;
+    }
+    
+.fighting{
+background-color:rgb(81, 90, 30) ;
+color: black;
+        }
+    
+.poison{
+background-color:rgb(75, 52, 94) ;
+color: black;
+    }
+    
+.ground{
+background-color:rgb(80, 80, 24) ;
+color: black;
+    }
+    
+.flying{
+background-color:rgb(202, 152, 200) ;
+color: black;
+    }
+    
+.psychic{
+background-color:rgb(134, 37, 62) ;
+color: black;
+    }
+    
+.bug{
+background-color:rgb(14, 168, 47) ;
+color: black;
+    }
+      
+.rock{
+background-color:rgb(139, 139, 131) ;
+color: black;
+    }
 
-.botonFiltro:hover{
-    background-color:rgb(140, 123, 239)
-}
+.ghost{
+background-color:rgb(196, 163, 176) ;
+color: black;
+    }
+    
+.dark{
+background-color:rgb(41, 41, 38) ;
+color: rgb(240, 240, 240);
+    }
+.dragon{
+background-color:rgb(133, 79, 30) ;
+color: black;
+    }
+    
+.steel{
+background-color:rgb(180, 180, 150) ;
+color: black;
+    }
+
+.fairy{
+background-color:rgb(139, 97, 163) ;
+color: black;
+    }
+

@@ -3,17 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Tecnologica</title>
+    <title>Pokedex</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/Pokeball_icon-icons.com_67533.png" type="png" sizes="32px">
 </head>
-<body><h1>Bienvenidos a tienda Tecnologica</h1>
-<p class="parrafo1">Busqueda de productos y control de Stock</p>
-    <input type="text" id="filtrado">
-    <button id="filtrar">Buscar</button>
-    <button id="BotonAP">Agregar un producto</button>
-
-
-
+<body>
+    <header>
+        <nav class="nav">
+        <img src="./img/pokedexfondo.png" alt="pokedex">
+        <ul class="list-nav">
+            <li class="nav-element"><button class="boton-header" id="ver-todos">ver todos</button></li>
+            <li class="nav-element"><button class="boton-header normal" id="normal">normal</button></li>
+            <li class="nav-element"><button class="boton-header fire" id="fire">fuego</button></li>
+            <li class="nav-element"><button class="boton-header water" id="water">agua</button></li>
+            <li class="nav-element"><button class="boton-header grass" id="grass">planta</button></li>
+            <li class="nav-element"><button class="boton-header electric" id="electric">electrico</button></li>
+            <li class="nav-element"><button class="boton-header ice" id="ice">hielo</button></li>
+            <li class="nav-element"><button class="boton-header fighting" id="fighting">peleador</button></li>
+            <li class="nav-element"><button class="boton-header poison" id="poison">veneno</button></li>
+            <li class="nav-element"><button class="boton-header ground" id="ground">tierra</button></li>
+            <li class="nav-element"><button class="boton-header flying" id="flying">volador</button></li>
+            <li class="nav-element"><button class="boton-header psychic" id="psychic">psiquico</button></li>
+            <li class="nav-element"><button class="boton-header bug" id="bug">bicho</button></li>
+            <li class="nav-element"><button class="boton-header rock" id="rock">roca</button></li>
+            <li class="nav-element"><button class="boton-header ghost" id="ghost">fantasma</button></li>
+            <li class="nav-element"><button class="boton-header dragon" id="dragon">dragon</button></li>
+            <li class="nav-element"><button class="boton-header steel" id="steel">acero</button></li>
+            <li class="nav-element"><button class="boton-header fairy" id="fairy">hada</button></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <div id="todos">
+            <div class="todos-poke" id="listaPokemons">   
+            </div>   
+        </div>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>
